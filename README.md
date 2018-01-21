@@ -19,7 +19,9 @@ handler.test.js
 This provides a node unit test for our handler.js.
 
 Test as follows:
+```
 $ mocha handler.js
+```
 
 Look for "passing"
 
@@ -39,7 +41,7 @@ endpoint definition.  Serverless framework will use this to construct
 CloudFormation objects to support your lambda code.  It will package
 things up nicely too.
 
-
+```
 $ serverless deploy
 Serverless: Packaging service...
 Serverless: Excluding development dependencies...
@@ -64,11 +66,10 @@ functions:
   currentTime: myEndpoint-dev-currentTime
 
 
-
 $ serverless invoke --function endpoint --log
 
 $ curl https://ABCDEFGHIJK.execute-api.us-east-1.amazonaws.com/dev/ping
-
+```
 
 
 
