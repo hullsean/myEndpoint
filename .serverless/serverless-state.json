@@ -111,7 +111,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/myEndpoint/dev/1516513634160-2018-01-21T05:47:14.160Z/myEndpoint.zip"
+                "S3Key": "serverless/myEndpoint/dev/1516515163940-2018-01-21T06:12:43.940Z/myEndpoint.zip"
               },
               "FunctionName": "myEndpoint-dev-currentTime",
               "Handler": "handler.endpoint",
@@ -130,14 +130,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "CurrentTimeLambdaVersiongYzFmbCceBmAo1pEwSBqzcEMDtmj3xCtq4hvWs8JJ8": {
+          "CurrentTimeLambdaVersionZVSKkouKdZ0hYYFhbLhnn14uDL9zaPLpnzrcsjgS0": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CurrentTimeLambdaFunction"
               },
-              "CodeSha256": "kyqHQ6T/q2VeLu/Xo3H12j9/J6KTO9pRSRkwprbB+vE="
+              "CodeSha256": "MFyproQoE/JprGLljINeJujjACixqKAVlWdu/aWtFtE="
             }
           },
           "ApiGatewayRestApi": {
@@ -205,7 +205,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1516513634200": {
+          "ApiGatewayDeployment1516515163979": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -260,7 +260,7 @@
           "CurrentTimeLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CurrentTimeLambdaVersiongYzFmbCceBmAo1pEwSBqzcEMDtmj3xCtq4hvWs8JJ8"
+              "Ref": "CurrentTimeLambdaVersionZVSKkouKdZ0hYYFhbLhnn14uDL9zaPLpnzrcsjgS0"
             }
           },
           "ServiceEndpoint": {
@@ -323,7 +323,7 @@
     "artifact": "/Users/sean/serverless_test/myEndpoint/.serverless/myEndpoint.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/myEndpoint/dev/1516513634160-2018-01-21T05:47:14.160Z",
+    "artifactDirectoryName": "serverless/myEndpoint/dev/1516515163940-2018-01-21T06:12:43.940Z",
     "artifact": "myEndpoint.zip"
   }
 }
